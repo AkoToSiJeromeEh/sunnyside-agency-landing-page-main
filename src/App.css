@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+  min-height: 100dvh;
+  font-family: 'Barlow' , sans-serif;
+  background-color: white;
+  image-rendering: optimizeQuality;
+
+}
+
+input, textarea, select {
+  font: inherit;
+}
+
+h1,h2,button,.active{
+  font-family: 'Fraunces' , serif;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: unset;
+}
+#root, #__next {
+  isolation: isolate;
+}
+.add-filter{
+  filter: brightness(0) saturate(100%) invert(27%) sepia(59%) saturate(331%) hue-rotate(116deg) brightness(95%) contrast(97%);
+}
+::selection {
+  background: hsla(0, 0%, 0%, 0.179);
+  
+}
+
+.arrow {
+  position: absolute;
+  border-top: 30px solid transparent;
+  border-bottom: 30px solid transparent;
+  border-right: 30px solid #fff;
+  right: 0px;
+  top : -20px;
+}
